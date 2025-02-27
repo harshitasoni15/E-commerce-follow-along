@@ -280,3 +280,39 @@ In this milestone, we focused on creating a **Mongoose schema** for products and
      - **Section 1:** Profile photo, name, and email.
      - **Section 2:** Addresses with a button to "Add address."
    - If no address is found, display "No address found."
+
+
+# Milestone 21: Creating an Address Input Form   
+
+**Learning Goals:**  
+- Create a frontend form to collect address details.  
+- Store the input address in a state and handle navigation to the form page.  
+
+**Steps:**  
+1. **Address Form:**  
+   - Design a form to collect:  
+     - Country  
+     - City  
+     - Address Line 1  
+     - Address Line 2  
+     - Zip Code  
+     - Address Type  
+
+2. **State Management:**  
+   - Create a state to store the input address details.  
+
+3. **Navigation:**  
+   - When clicking "Add Address" in the profile, navigate to the address form page.  
+
+# Milestone 22: Saving Address in User Profile   
+
+**Learning Goals:**  
+- Create a backend endpoint to store the address received from the frontend form inside the user profile in the database.  
+
+**Steps:**  
+1. **Backend Endpoint:**  
+   - Create an endpoint to receive address details (country, city, address1, address2, zip code, address type) from the frontend form.  
+   - Add the received address to the address array in the user collection.  
+
+2. **Database Update:**  
+   - Ensure the address is saved and linked to the specific user profile.  
