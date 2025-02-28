@@ -282,7 +282,7 @@ In this milestone, we focused on creating a **Mongoose schema** for products and
    - If no address is found, display "No address found."
 
 
-# Milestone 21: Creating an Address Input Form   
+# Milestone 21  
 
 **Learning Goals:**  
 - Create a frontend form to collect address details.  
@@ -304,7 +304,7 @@ In this milestone, we focused on creating a **Mongoose schema** for products and
 3. **Navigation:**  
    - When clicking "Add Address" in the profile, navigate to the address form page.  
 
-# Milestone 22: Saving Address in User Profile   
+# Milestone 22 
 
 **Learning Goals:**  
 - Create a backend endpoint to store the address received from the frontend form inside the user profile in the database.  
@@ -316,3 +316,44 @@ In this milestone, we focused on creating a **Mongoose schema** for products and
 
 2. **Database Update:**  
    - Ensure the address is saved and linked to the specific user profile.  
+
+# Milestone 23: 
+
+1. **Place Order Button in Cart Page:**  
+   - Added a "Place Order" button inside the cart page.  
+   - When clicked, it navigates the user to the "Select Address" page.  
+
+2. **Select Address Page:**  
+   - Displays all saved addresses of the user.  
+   - Allows the user to select an address using a radio button.  
+   - Disables the "Confirm Address" button until an address is selected.  
+
+3. **Backend Endpoint for Fetching Addresses:**  
+   - Created an API endpoint (`GET /api/addresses`) that retrieves all saved addresses of the logged-in user from the database.  
+
+4. **Mongoose Schema for Orders:**  
+   - Defined an `Order` schema to store order details, including:  
+     - User ID (who placed the order)  
+     - Selected delivery address  
+     - Ordered items with product details and quantity  
+     - Total amount of the order  
+     - Order status (Pending, Shipped, Delivered) 
+
+# Milestone 24
+
+1. **Order Confirmation Page:**  
+   - After selecting an address, users are taken to an **Order Confirmation Page**.  
+   - This page displays:  
+     - All the products the user is ordering, along with their quantity.  
+     - The selected delivery address where the order will be shipped.  
+     - The total cart value calculated from the selected items.  
+     - A Place Order button is added at the bottom to finalize the order.  
+
+2. **Navigation & State Management:**  
+   - The `OrderConfirmationPage` receives the **selected address, cart items, and total price** via `location.state`.  
+   - This ensures the correct details are passed from the cart and address selection stages.
+
+3. **Updated Backend and Schema:**  
+   - The backend already has an endpoint (`GET /api/addresses`) to fetch user addresses.  
+   - The `Order` Mongoose schema was **kept intact** to store order details when users finalize their purchase.  
+  
