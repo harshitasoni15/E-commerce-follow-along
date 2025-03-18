@@ -357,3 +357,31 @@ In this milestone, we focused on creating a **Mongoose schema** for products and
    - The backend already has an endpoint (`GET /api/addresses`) to fetch user addresses.  
    - The `Order` Mongoose schema was **kept intact** to store order details when users finalize their purchase.  
   
+  # Order Management Milestones
+
+# Milestone 25
+
+- Create an endpoint to receive products, user, and address details.
+- Retrieve user `_id` using their email.
+- Store separate orders for each product with the same address.
+- Use the `Order` schema to save order details in MongoDB.
+
+# Milestone 26
+
+- Create an endpoint to receive user email.
+- Retrieve `_id` using the email.
+- Fetch all orders associated with the user and return them in the response.
+
+# Milestone 27
+
+- Create `my-orders` page.
+- Send a GET request to fetch user orders using email.
+- Display all user orders.
+- Add `My Orders` page in the navbar for easy navigation.
+
+# Milestone 28
+
+- Add a `Cancel Order` button for each order in `my-orders`.
+- Hide the button for already canceled orders.
+- Create an endpoint to receive `order-id`.
+- Retrieve order by ID, update status to `canceled`, and save changes.     
