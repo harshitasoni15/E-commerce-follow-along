@@ -1,12 +1,13 @@
 import React from 'react'
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
-import {LoginPage,SignupPage,Home,CreateProduct, MyProducts, Cart, ProductDetails, Profile, CreateAddress, SelectAddress, OrderConfirmation} from "./Routes";
+import {LoginPage,SignupPage,Home,CreateProduct, MyProducts, Cart, ProductDetails, Profile, CreateAddress, SelectAddress, OrderConfirmation, MyOrdersPage} from "./Routes";
 import "./App.css";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
+
         <Route path='/' element={<Home/>}/>
         <Route path='/login' element={<LoginPage/>}/>
         <Route path="/signup" element={<SignupPage />} />
@@ -19,6 +20,8 @@ const App = () => {
         <Route path='/create-address' element={<CreateAddress />} />
         <Route path="/select-address" element={<SelectAddress />} />
         <Route path="/order-confirmation" element={<OrderConfirmation />} />
+        <Route path="/myorders" element={<MyOrdersPage />} />
+
       </Routes>
     </BrowserRouter>
   )
