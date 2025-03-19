@@ -384,4 +384,15 @@ In this milestone, we focused on creating a **Mongoose schema** for products and
 - Add a `Cancel Order` button for each order in `my-orders`.
 - Hide the button for already canceled orders.
 - Create an endpoint to receive `order-id`.
-- Retrieve order by ID, update status to `canceled`, and save changes.     
+- Retrieve order by ID, update status to `canceled`, and save changes. 
+
+# Milestone 29
+
+1. Create a PayPal Developer Account at PayPal Developer Dashboard (https://developer.paypal.com/).
+2. Set Up Sandbox Accounts → Copy and save the User ID.
+3. Retrieve PayPal Client ID → Copy and save for integration.
+4. Modify Order Confirmation Page → Add two payment options:
+   - Cash on Delivery (COD)
+   - Online Payment (PayPal)
+5. Add Payment Selection → Use radio buttons:
+   - Selecting Online Payment should display PayPal buttons.
