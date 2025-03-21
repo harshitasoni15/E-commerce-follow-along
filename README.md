@@ -396,3 +396,8 @@ In this milestone, we focused on creating a **Mongoose schema** for products and
    - Online Payment (PayPal)
 5. Add Payment Selection → Use radio buttons:
    - Selecting Online Payment should display PayPal buttons.
+
+# Milestone 30
+
+1. Implemented online payment using PayPal API using the client key you created earlier.
+2. Downloaded NPM package called react-paypal-js that will provide an component called PayPalScriptProvider which will display online payment methods like credit or debit card etc..
