@@ -1,4 +1,3 @@
-// OrderConfirmation.jsx
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import NavBar from '../components/auth/nav';
@@ -205,7 +204,7 @@ const OrderConfirmation = () => {
                              <div className='mt-4' style={{ maxWidth: '500px' }}>
                                  <PayPalScriptProvider
                                      options={{
-                                         'client-id': 'AY4YfVn_FPlaDXNaXYneA2Ckp7rs79AmsV2esUnMMTy1tdCuanu29afEkWjMpnc0s-frnsQlUy1QXwlA', 
+                                         'client-id': import.meta.env.VITE_CLIENT_ID, 
                                      }}
                                  >
                                      <PayPalButtons

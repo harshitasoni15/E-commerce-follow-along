@@ -401,3 +401,12 @@ In this milestone, we focused on creating a **Mongoose schema** for products and
 
 1. Implemented online payment using PayPal API using the client key you created earlier.
 2. Downloaded NPM package called react-paypal-js that will provide an component called PayPalScriptProvider which will display online payment methods like credit or debit card etc..
+
+# Milestone 31
+
+1. Installed NPM package react-redux and @reduxjs/toolkit for global state management.
+2. Created a store folder with store.js and userActions.js to manage user email state.
+3. Configured Redux store in store.js using configureStore and createSlice.
+4. Defined setEmail action in userActions.js to update the global email state.
+5. Wrapped App component inside Provider in index.js to enable Redux globally.
+6. Used useSelector to access email state and useDispatch to update email in components.
